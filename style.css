@@ -29,7 +29,7 @@ img {
 
 .addBooks {
   width: 350px;
-  height: 300px;
+  height: 350px;
   border: 2.5px solid var(--main-tx-color);
   display: flex;
   flex-direction: column;
@@ -39,8 +39,8 @@ img {
   border-radius: 10px;
 }
 
-.modal{
-    opacity: 0;
+.modal {
+  opacity: 0;
 }
 
 .addBooks div {
@@ -51,20 +51,23 @@ img {
 }
 
 #title,
-#author {
+#author,
+#read {
   width: 100%;
 }
 
-#author{
-    transform: translateY(-30px);
+#author,
+#read {
+  transform: translateY(-30px);
 }
 
-label{
-    margin-bottom: 10px;
+label {
+  margin-bottom: 10px;
 }
 
 .title,
-.author {
+.author,
+.read {
   width: 85%;
   height: 25px;
   border: 1.5px solid var(--main-tx-color);
@@ -72,12 +75,46 @@ label{
 }
 
 input[type="button"] {
-    width: 100px;
-    height: 28px;
-    background-color: var(--main-tx-color);
-    border: 1.5px solid var(--main-bg-color);
-    color: var(--main-bg-color);
-    font-weight: bolder;
-    border-radius: 5px;
-    transform: translateY(-20px)
+  width: 100px;
+  height: 28px;
+  background-color: var(--main-tx-color);
+  border: 1.5px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+  font-weight: bolder;
+  border-radius: 5px;
+  transform: translateY(-20px);
+}
+
+.containerList {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-evenly;
+  width: 800px;
+  height: 400px;
+}
+
+.listItem {
+  display: flex;
+  margin: 20px auto;
+  width: 750px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  border-radius: 15px;
+  border: double 5px transparent;
+  background-image: linear-gradient(#dfe7fd, #dfe7fd),
+    linear-gradient(to right, rgb(0, 195, 255), rgb(224, 104, 235));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.listItem p {
+  color: var(--main-tx-color);
+  font-size: 1.5rem;
+  justify-self: flex-start;
+  font-style: italic;
 }
