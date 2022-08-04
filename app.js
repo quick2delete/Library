@@ -1,4 +1,4 @@
-const plusImg = document.querySelector(".plusImg");
+const img = document.querySelector("img");
 const modal = document.querySelector(".modal");
 const inputTitle = document.querySelector(".title");
 const inputAuthor = document.querySelector(".author");
@@ -27,7 +27,7 @@ function addBookToList() {
 }
 addBookToList();
 
-plusImg.addEventListener("click", () => {
+img.addEventListener("click", (e) => {
   modal.style.opacity = "1";
 });
 
@@ -40,5 +40,4 @@ btn.addEventListener("click", () => {
   inputTitle.value = "";
   inputAuthor.value = "";
   inputRead.value = "";
-  console.log(bookList);
 });
